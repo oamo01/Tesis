@@ -23,7 +23,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sanf-serif}
 
                                     $.ajax({
                                       type: 'POST',
-                                      url: '/',
+                                      url: '/process',
                                       success: function(data){
                                         alert(data);
                                       }
@@ -32,7 +32,6 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sanf-serif}
 
                            });
                       </script>
-
 
 </head>
 
@@ -64,63 +63,10 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sanf-serif}
 
         <table class="w3-table w3-striped w3-white">
         <tr>
+       
         {%block content%}
 
 				{%endblock%}
-          </tr>
-         <tr>
-            <td style = "text-align: center;"><b>Frecuencia</b></td>
-            <td style = "text-align: center;"><b>Flujo</b></td>
-          </tr>
-          <tr>
-            <td style = "text-align: center;">60 Hz</td>
-            <td style = "text-align: center;"><i>5.02 lps</i></td>
-          </tr>
-          <tr>
-            <td style = "text-align: center;">54 Hz</td>
-            <td style = "text-align: center;"><i>4.55 lps</i></td>
-          </tr>
-          <tr>
-            <td style = "text-align: center;">48 Hz</td>
-            <td style = "text-align: center;"><i>4.11 lps</i></td>
-          </tr>
-          <tr>
-            <td style = "text-align: center;">42 Hz</td>
-            <td style = "text-align: center;"><i>3.64 lps</i></td>
-          </tr>
-          <tr>
-            <td style = "text-align: center;">36 Hz</td>
-            <td style = "text-align: center;"><i>3.06 lps</i></td>
-          </tr>
-          <tr>
-            <td style = "text-align: center;">30 Hz</td>
-            <td style = "text-align: center;"><i>2.69 lps</i></td>
-          </tr>
-          <tr>
-            <td style = "text-align: center;">24 Hz</td>
-            <td style = "text-align: center;"><i>2.25 lps</i></td>
-          </tr>
-	         <tr>
-            <td style = "text-align: center;">18 Hz</td>
-            <td style = "text-align: center;"><i>1.86 lps</i></td>
-          </tr>
-	        <tr>
-            <td style = "text-align: center;">12 Hz</td>
-            <td style = "text-align: center;"><i>1.49 lps</i></td>
-          </tr>
-	        <tr>
-            <td style = "text-align: center;">6 Hz</td>
-            <td style = "text-align: center;"><i>1.19 lps</i></td>
-          </tr>
-	        <tr>
-            <td style = "text-align: center;">0 Hz</td>
-            <td style = "text-align: center;"><i>0 lps</i></td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </div>
-
 
 
 <footer>
