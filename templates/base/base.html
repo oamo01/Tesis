@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head class="w3-container" style="padding-top:22px">
+
+<h5><b><i class="fa fa-dashboard"></i> Variador de Frecuencia N3</b></h5>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sanf-serif}
+</style>
+
+
+<title>{%block title%}  {%endblock%}</title>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+                      <script>
+                           $(document).ready(function(){
+
+                                $('#Activar').click(function(){
+
+                                    $.ajax({
+                                      type: 'POST',
+                                      url: '/',
+                                      success: function(data){
+                                        alert(data);
+                                      }
+                                    });
+                                });
+
+                           });
+                      </script>
+
+
+</head>
+
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <span class="w3-bar-item w3-right">LABINTHAP</span>
+</div>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+
+<body class="w3-light-gray">
+
+
+  <div class="w3-row-padding w3-margin-bottom">
+    <div class="w3-quarter">
+      <div class="w3-container w3-red w3-padding-10">
+        <div class="w3-right">
+        </div>
+        <div class="w3-clear"></div>
+        
+      </div>
+    </div>
+
+  <div class="w3-panel">
+    <div class="w3-row-padding" style="margin:16 -16px">
+        
+      <div class="w3-twothird">
+
+        <table class="w3-table w3-striped w3-white">
+        <tr>
+        {%block content%}
+
+				{%endblock%}
+          </tr>
+         <tr>
+            <td style = "text-align: center;"><b>Frecuencia</b></td>
+            <td style = "text-align: center;"><b>Flujo</b></td>
+          </tr>
+          <tr>
+            <td style = "text-align: center;">60 Hz</td>
+            <td style = "text-align: center;"><i>5.02 lps</i></td>
+          </tr>
+          <tr>
+            <td style = "text-align: center;">54 Hz</td>
+            <td style = "text-align: center;"><i>4.55 lps</i></td>
+          </tr>
+          <tr>
+            <td style = "text-align: center;">48 Hz</td>
+            <td style = "text-align: center;"><i>4.11 lps</i></td>
+          </tr>
+          <tr>
+            <td style = "text-align: center;">42 Hz</td>
+            <td style = "text-align: center;"><i>3.64 lps</i></td>
+          </tr>
+          <tr>
+            <td style = "text-align: center;">36 Hz</td>
+            <td style = "text-align: center;"><i>3.06 lps</i></td>
+          </tr>
+          <tr>
+            <td style = "text-align: center;">30 Hz</td>
+            <td style = "text-align: center;"><i>2.69 lps</i></td>
+          </tr>
+          <tr>
+            <td style = "text-align: center;">24 Hz</td>
+            <td style = "text-align: center;"><i>2.25 lps</i></td>
+          </tr>
+	         <tr>
+            <td style = "text-align: center;">18 Hz</td>
+            <td style = "text-align: center;"><i>1.86 lps</i></td>
+          </tr>
+	        <tr>
+            <td style = "text-align: center;">12 Hz</td>
+            <td style = "text-align: center;"><i>1.49 lps</i></td>
+          </tr>
+	        <tr>
+            <td style = "text-align: center;">6 Hz</td>
+            <td style = "text-align: center;"><i>1.19 lps</i></td>
+          </tr>
+	        <tr>
+            <td style = "text-align: center;">0 Hz</td>
+            <td style = "text-align: center;"><i>0 lps</i></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+<footer>
+	<div class="container">
+		<div class="row">
+				<p class="copyright text-muted">&copy; LABINTAHP</p>
+		</div>
+		
+
+
+	</div>
+
+
+
+</footer>
+
+
+</body>
+</html>
