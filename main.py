@@ -51,6 +51,6 @@ def activate():
 	return render_template('index.html', title = title, form = comment_form, f=f )
 
 if __name__ == '__main__':
-	app.run(debug = True, port=8000)
-#	app.run(debug = True, host=10.8.0.99, port=80)
+#	app.run(debug = True, port=8000)
+	app.run(debug = True, host=10.8.0.99, port=80)
 
